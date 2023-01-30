@@ -1,7 +1,8 @@
 import { Component } from 'react';
 import { nanoid } from 'nanoid';
+import css from '../ContactForm/ContactForm.module.css'
 
-export class Form extends Component {
+export class ContactForm extends Component {
   state = {
     name: '',
     number: '',
@@ -27,10 +28,11 @@ export class Form extends Component {
 
   render() {
     return (
-      <form action="" onSubmit={this.handleSubmit}>
-        <label htmlFor={this.nameInputId}>
+      <form className={css.form} action="" onSubmit={this.handleSubmit}>
+        <label className={css.label} htmlFor={this.nameInputId}>
           Name
-          <input
+          <input 
+          className={css.input} 
             id={this.nameInputId}
             type="text"
             name="name"
@@ -41,9 +43,10 @@ export class Form extends Component {
             required
           />
         </label>
-        <label htmlFor={this.numberInputId}>
+        <label className={css.label} htmlFor={this.numberInputId}>
           Number
-          <input
+          <input 
+          className={css.input} 
             id={this.numberInputId}
             type="tel"
             name="number"
@@ -54,7 +57,7 @@ export class Form extends Component {
             required
           />
         </label>
-        <button type="submit">Add contact</button>
+        <button className={css.button} type="submit">Add contact</button>
       </form>
     );
   }

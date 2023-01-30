@@ -1,0 +1,29 @@
+.list {
+  margin-top: 50px;
+}
+.item {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.text {
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.19;
+}
+.button {
+  display: block;
+  border-radius: 4px;
+  padding: 1px 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+  background-color: #b6e0e0;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
