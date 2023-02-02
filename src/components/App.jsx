@@ -38,10 +38,15 @@ export class App extends Component {
   };
 
   deleteContactHandler = (contactId) => {
-    this.setState(prevSate => ({
-      contacts: prevSate.contacts.filter(contact => contact.id !== contactId),
+    this.setState(prevState => ({
+      contacts: prevState.contacts.filter(contact => contact.id !== contactId),
     }));
   };
+
+  componentDidUpdate(prevProps, prevState){
+    console.log(prevState);
+    console.log(this.state);
+  }
 
   render() {
     const { filter } = this.state;
