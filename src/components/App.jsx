@@ -37,9 +37,9 @@ export class App extends Component {
     );
   };
 
-  deleteContactHandler = event => {
+  deleteContactHandler = (contactId) => {
     this.setState(prevSate => ({
-      contacts: prevSate.contacts.filter(contact => contact.id !== event),
+      contacts: prevSate.contacts.filter(contact => contact.id !== contactId),
     }));
   };
 
