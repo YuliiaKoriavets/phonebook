@@ -4,17 +4,6 @@ import Filter from './Filter/Filter';
 import ContactList from './ContactList/ContactList';
 
 export const App = () => {
-
-  // const [contacts, setContacts] = useState(()=>
-  //   JSON.parse(window.localStorage.getItem('contacts')) ?? []
-  // );
-  
-
-  // useEffect(() => {
-  //   window.localStorage.setItem('contacts', JSON.stringify(contacts));
-  // }, [contacts]);
-
-
   return (
     <section>
       <Wrapper title="Phonebook">
@@ -22,7 +11,7 @@ export const App = () => {
       </Wrapper>
       <Wrapper title="Contacts">
         <Filter />
-        <ContactList/>
+        <ContactList />
       </Wrapper>
     </section>
   );
