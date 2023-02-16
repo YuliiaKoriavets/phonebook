@@ -8,7 +8,8 @@ export default function AppBar() {
     const isLoggedIn = useSelector(selectIsLoggedIn)
   return (
     <header>
-      <NavLink>Home</NavLink>
+      <NavLink key="home" to="/" end>Home</NavLink>
+      <NavLink key="contacts" to="/contacts">Contacts</NavLink>
       {isLoggedIn ? <UserMenu /> : <AuthNav />}
     </header>
   );
