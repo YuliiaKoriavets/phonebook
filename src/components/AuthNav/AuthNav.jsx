@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { Box, Button } from '@mui/material';
-import css from '../components/NavLink.module.css';
+import css from '../NavLink.module.css';
 
 export default function AuthNav() {
   return (

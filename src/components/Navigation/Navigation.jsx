@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { selectIsLoggedIn } from 'redux/auth/authSelectors';
 import { Typography } from '@mui/material';
-import css from '../components/NavLink.module.css';
+import css from '../NavLink.module.css';
 
 export default function Navigation() {
   const isLoggedIn = useSelector(selectIsLoggedIn);

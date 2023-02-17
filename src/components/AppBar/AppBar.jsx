@@ -1,8 +1,8 @@
 import { useSelector } from 'react-redux';
 import {AppBar, Container, Toolbar} from '@mui/material';
-import Navigation from './Navigation';
-import AuthNav from './AuthNav';
-import UserMenu from './UserMenu';
+import Navigation from '../Navigation/Navigation';
+import AuthNav from '../AuthNav/AuthNav';
+import UserMenu from '../UserMenu/UserMenu';
 import { selectIsLoggedIn } from 'redux/auth/authSelectors';
 
 export default function Header() {

@@ -5,7 +5,7 @@ import { fetchCurrentUser } from 'redux/auth/authOperations';
 import { Route, Routes } from 'react-router-dom';
 import PublicRoute from './Rotes/PublicRoute';
 import PrivateRoute from './Rotes/PrivateRoute';
-import Layout from './Layout';
+import Layout from './Layout/Layout';
 const RegisterPage = lazy(() => import('../pages/RegisterPage'));
 const LoginPage = lazy(() => import('../pages/LoginPage'));
 const Contacts = lazy(() => import('../pages/Contacts'));

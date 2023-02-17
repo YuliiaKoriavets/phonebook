@@ -1,7 +1,7 @@
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
 import {ThemeProvider, createTheme} from '@mui/material';
-import Header from './AppBar';
+import Header from '../AppBar/AppBar';
 
 export default function Layout() {
     const theme = createTheme();

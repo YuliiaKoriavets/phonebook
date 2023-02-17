@@ -2,10 +2,10 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { selectIsLoading } from 'redux/contacts/contactsSelectors';
 import { fetchContacts } from 'redux/contacts/contactsOperations';
-import ContactForm from 'components/ContactForm';
-import Filter from 'components/Filter';
+import ContactForm from 'components/ContactForm/ContactForm';
+import Filter from 'components/Filter/Filter';
 import Loader from 'components/Loader/Loader';
-import ContactList from 'components/ContactList';
+import ContactList from 'components/ContactList/ContactList';
 import { Container, Typography } from '@mui/material';
 
 export default function Contacts() {
