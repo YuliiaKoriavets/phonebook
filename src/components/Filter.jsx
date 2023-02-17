@@ -2,7 +2,7 @@ import { nanoid } from 'nanoid';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectFilter } from 'redux/contacts/contactsSelectors';
 import { changeFilter } from 'redux/contacts/contactsSlice';
-import css from '../Filter/Filter.module.css';
+import { TextField, Box } from '@mui/material';
 
 export default function Filter() {
   const dispatch = useDispatch();
@@ -14,16 +14,17 @@ export default function Filter() {
 
   let filterInputId = nanoid();
   return (
-    <label className={css.label} htmlFor={filterInputId}>
-      {' '}
-      Find contacts by name
-      <input
-        className={css.input}
+    <Box maxWidth={400} ml="auto" mr="auto">
+      <TextField
+        margin="normal"
+        fullWidth
         id={filterInputId}
         type="text"
         value={filter}
         onChange={handleChangeFilter}
+        label="Please enter contact name"
+        variant="standard"
       />
-    </label>
+    </Box>
   );
 }

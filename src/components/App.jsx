@@ -3,11 +3,9 @@ import { useEffect, lazy } from 'react';
 import { fetchCurrentUser } from 'redux/auth/authOperations';
 // import { selectIsFetchingCurrentUser } from 'redux/auth/authSelectors';
 import { Route, Routes } from 'react-router-dom';
-import PublicRoute from './PublicRoute';
-import PrivateRoute from './PrivateRoute';
+import PublicRoute from './Rotes/PublicRoute';
+import PrivateRoute from './Rotes/PrivateRoute';
 import Layout from './Layout';
-
-const Home = lazy(() => import('../pages/Home'));
 const RegisterPage = lazy(() => import('../pages/RegisterPage'));
 const LoginPage = lazy(() => import('../pages/LoginPage'));
 const Contacts = lazy(() => import('../pages/Contacts'));
@@ -23,7 +21,6 @@ export const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
         <Route
           path="register"
           element={
