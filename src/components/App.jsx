@@ -29,7 +29,7 @@ export const App = () => {
         />
         <Route
           path="login"
-          element={
+          index element={
             <PublicRoute redirectTo="/contacts" component={<LoginPage />} />
           }
         />
